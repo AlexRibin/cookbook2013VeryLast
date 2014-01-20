@@ -1,0 +1,484 @@
+﻿@font-face {
+    font-family: 'action_manregular';
+    src: url('../font/Action_Man-webfont.eot');
+    src: url('../font/Action_Man-webfont.eot?#iefix') format('embedded-opentype'), /*url('../font/Action_Man-webfont.woff') format('woff'),*/ url('../font/Action_Man-webfont.ttf') format('truetype'), url('../font/Action_Man-webfont.svg#action_manregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    direction: ltr;
+    overflow: visible;
+}
+.appV {
+    position:fixed;
+    top:0px;
+    right:20px;
+    font-size:30px;
+    color:yellow;
+}
+html, body {
+    /*background-color: #ff6d00;*/
+    width: 100%;
+    height: 100%;
+    /*-webkit-overflow-scrolling: touch;*/
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.ieErr {
+    width: 100%;
+    font-size: 80px;
+    background-color: red;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    z-index: 100000;
+    text-align: center;
+    display: none;
+}
+
+.wrapper, form, .bgstretcher-area, .bgstretcher-page {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    position: relative;
+    opacity: 0.99;
+    /*overflow-x: hidden;*/
+}
+
+/*#snowContainer {
+    position: relative !important;
+}*/
+
+.backgroundImg {
+    width: 100%;
+    height: 100%;
+}
+
+/*.testDiv {
+    width: 100%;
+    position: relative;
+
+}*/
+
+.text {
+    /*width: 120px;
+    height: 100px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    opacity: .5;*/
+    backface-visibility: visible !important;
+    -webkit-backface-visibility: visible !important; /* Chrome and Safari */
+    -moz-backface-visibility: visible !important; /* Firefox */
+    -ms-backface-visibility: visible !important; /* Internet Explorer */
+}
+
+    .text div {
+        /*background-color: #4cff00;
+        width: 120px;
+        height: 100px;*/
+        backface-visibility: hidden !important;
+        -webkit-backface-visibility: hidden !important; /* Chrome and Safari */
+        -moz-backface-visibility: hidden !important; /* Firefox */
+        -ms-backface-visibility: hidden !important; /* Internet Explorer */
+    }
+
+#pinchzoom {
+    position: absolute;
+    /*top: 20%;
+    right: 0px;
+    width: 35%;*/
+}
+
+    .rect, #pinchzoom, #pinchzoom img {
+        backface-visibility: hidden !important;
+        -webkit-backface-visibility: hidden !important; /* Chrome and Safari */
+        -moz-backface-visibility: hidden !important; /* Firefox */
+        -ms-backface-visibility: hidden !important; /* Internet Explorer */
+    }
+
+        #pinchzoom img {
+            width: 100%;
+        }
+
+.bookShadow {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+}
+
+.rightBookShadow {
+    left: 0;
+}
+
+.leftBookShadow {
+    right: 0;
+}
+
+#cookbook .main-images {
+    width: 100%;
+    height: 100%;
+}
+
+.btnMenu {
+    position: fixed;
+    top: -20px;
+    left: 5px;
+    z-index: 2;
+}
+
+    .btnMenu img {
+        border: none;
+    }
+
+.menu {
+    position: fixed;
+    top: 0px;
+    left: 190px;
+    width: 600px;
+    z-index: 10;
+}
+
+.menu_recipe {
+    background-image: url('../images/menu_recipes.png');
+    height: 352px;
+    width: 265px;
+    list-style: none;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 20px;
+    float: left;
+    display: none;
+}
+
+    .menu_recipe > li {
+        margin-bottom: 5px;
+        cursor: pointer;
+        font-family: 'action_manregular';
+        font-size: 14px;
+        -moz-transition: .3s;
+        -o-transition: .3s;
+        -webkit-transition: .3s;
+        transition: .3s;
+    }
+
+        .menu_recipe > li:hover {
+            /*font-size: 16px;*/
+            color: #79c843;
+        }
+
+.menu_cats {
+    background-image: url('../images/menu_cats.png');
+    height: 352px;
+    width: 275px;
+    list-style: none;
+    padding-left: 15px;
+    padding-top: 20px;
+    display: none;
+    float: left;
+}
+
+    .menu_cats > li {
+        background-image: url('../images/1.png');
+        background-repeat: no-repeat;
+        background-position: 56px 0px;
+        margin-bottom: 10px;
+        height: 28px;
+    }
+
+        .menu_cats > li > a {
+            font-size: 20px;
+            display: block;
+            text-decoration: none;
+            color: #000;
+            font-family: 'action_manregular';
+            -moz-transition: .3s;
+            -o-transition: .3s;
+            -webkit-transition: .3s;
+            transition: .3s;
+        }
+
+            .menu_cats > li > a > span {
+                background-color: #79c843;
+                padding-right: 10px;
+            }
+
+            .menu_cats > li > a:hover {
+                font-size: 21px;
+                color: #fff9c0;
+            }
+
+.arrowNext {
+    right: 10px;
+}
+
+.arrowBack {
+    left: 10px;
+    display:none;
+}
+
+.arrowNext, .arrowBack {
+    position: fixed;
+    top: 45%;
+    width: 9.5%;
+    z-index:1000;
+    cursor:pointer;
+}
+
+    .arrowNext img, .arrowBack img {
+        width: 100%;
+        border: none;
+    }
+
+
+.contentDiv {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top:-190px;
+}
+
+.headerDiv {
+    width: 100%;
+    height:250px;
+    margin-top:-65px;
+}
+
+    .headerDiv img {
+        display: block;
+        margin: 0px auto;
+    }
+
+.categoryHeaderDiv {
+    width: 100%;
+    transition-duration: 1.3s;
+    transition-delay: 1s;
+}
+
+    .categoryHeaderDiv img {
+        width: 41%;
+        display: block;
+        margin: 0px auto;
+    }
+
+.headerOut {
+    transform: translateY(-400px) scale(1) !important;
+    -webkit-transform: translateY(-400px) scale(1) !important;
+    -moz-transform: translateY(-400px) scale(1) !important;
+    -ms-transform: translateY(-400px) scale(1) !important;
+    -o-transform: translateY(-400px) scale(1) !important;
+    opacity: 0 !important;
+}
+
+.categoryHeaderDivOut {
+    transform: translateY(-100px) scale(1.5) !important;
+    -webkit-transform: translateY(-100px) scale(1.5) !important;
+    -moz-transform: translateY(-100px) scale(1.5) !important;
+    -ms-transform: translateY(-100px) scale(1.5) !important;
+    -o-transform: translateY(-100px) scale(1.5) !important;
+    opacity: 0 !important;
+    transition-delay: 0s;
+}
+
+.headerScale {
+    transform: translateY(0px) scale(2) !important;
+    -webkit-transform: translateY(0px) scale(2) !important;
+    -moz-transform: translateY(0px) scale(2) !important;
+    -ms-transform: translateY(0px) scale(2) !important;
+    -o-transform: translateY(0px) scale(2) !important;
+}
+
+
+.textOut {
+    transform: rotateZ(-20deg) translateX(-1500px) !important;
+    -webkit-transform: rotateZ(-20deg) translateX(-1500px) !important;
+    -moz-transform: rotateZ(-20deg) translateX(-1500px)!important;
+    -ms-transform: rotateZ(-20deg) translateX(-1500px) !important;
+    -o-transform: rotateZ(-20deg) translateX(-1500px) !important;
+    /*opacity: 0.8 !important;*/
+}
+
+.imgOut {
+    transform: rotateZ(0deg) translateX(1500px) !important;
+    -webkit-transform: rotateZ(0deg) translateX(1500px) !important;
+    -moz-transform: rotateZ(0deg) translateX(1500px)!important;
+    -ms-transform: rotateZ(0deg) translateX(1500px) !important;
+    -o-transform: rotateZ(0deg) translateX(1500px) !important;
+    opacity: 0.8 !important;
+}
+
+.bigSize {
+    transform: scale(1.5) !important;
+    -webkit-transform: scale(1.5)!important;
+    -moz-transform: scale(1.5)!important;
+    -ms-transform: scale(1.5)!important;
+    -o-transform: scale(1.5)!important;
+}
+
+.ingredientsDiv, .directionsDiv {
+    width: 748px;
+    z-index: 1;
+    overflow:visible !important;
+}
+
+.ingredientsDiv {
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    transform: translateX(0px) scale(1) rotateZ(0deg);
+    -webkit-transform: translateX(0px) scale(1) rotateZ(0deg);
+    -moz-transform: translateX(0px) scale(1) rotateZ(0deg);
+    -ms-transform: translateX(0px) scale(1) rotateZ(0deg);
+    -o-transform: translateX(0px) scale(1) rotateZ(0deg);
+    transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transform-origin: -50%;
+    -ms-transform-origin: -50%;
+    -moz-transform-origin: -50%;
+    -webkit-transform-origin: -50%;
+    -o-transform-origin: -50%;
+    opacity: 1;
+}
+
+.directionsDiv {
+    position: absolute;
+    /*top: 550px;*/
+    /*left: 80px;*/
+    -webkit-transform-style: preserve-3d;
+    transform: translateX(0px) scale(1);
+    -webkit-transform: translateX(0px) scale(1);
+    -moz-transform: translateX(0px) scale(1);
+    -ms-transform: translateX(0px) scale(1);
+    -o-transform: translateX(0px) scale(1);
+    transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transform-origin: -30%;
+    -ms-transform-origin: -30%;
+    -moz-transform-origin: -30%;
+    -webkit-transform-origin: -30%;
+    -o-transform-origin: -30%;
+    opacity: 1;
+}
+
+.imgDiv {
+    position: absolute;
+    top: 270px;
+    left: 600px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transform: translateX(0px) rotate(15deg);
+    -webkit-transform: translateX(0px) scale(1) rotate(15deg);
+    -moz-transform: translateX(0px) scale(1) rotate(15deg);
+    -ms-transform: translateX(0px) scale(1) rotate(15deg);
+    -o-transform: translateX(0px) scale(1) rotate(15deg);
+    transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -ms-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transform-origin: 50%;
+    -ms-transform-origin: 50%;
+    -moz-transform-origin: 50%;
+    -webkit-transform-origin: 50%;
+    -o-transform-origin: 50%;
+    opacity: 1;
+    z-index:1;
+}
+
+.zIndex2 {
+    z-index: 2 !important;
+}
+
+/*.imgFrame {
+    background-image: url('../images/imgFrame.png');
+    background-repeat: no-repeat;
+}*/
+
+.imgDiv img {
+    width: 100%;
+    /*margin-left: 1.6%;
+    margin-top: 1%;*/
+}
+
+.ingredientsDiv_top {
+    background-image: url('../images/smallTop.png');
+    width: 748px;
+    height: 29px;
+}
+
+.ingredientsDiv_middle {
+    background-image: url('../images/middle.png');
+    /*background-repeat:no-repeat;*/
+    /*padding: 0px 50px;*/
+    width: 748px;
+}
+
+.ingredientsDiv_bottom {
+    background-image: url('../images/smallBottom.png');
+    width: 748px;
+    height: 26px;
+    margin-top: -1px;
+}
+
+.directionsDiv_top {
+    background-image: url('../images/largeTop.png');
+    width: 747px;
+    height: 26px;
+}
+
+.directionsDiv_middle {
+    background-image: url('../images/middle.png');
+    width: 747px;
+    position: relative;
+    /*padding: 0px 50px;*/
+}
+
+.directionsDiv_bootom {
+    background-image: url('../images/largeBottom.png');
+    width: 749px;
+    height: 32px;
+    margin-top: -1px;
+    background-repeat: no-repeat;
+}
+/*.ingredientsDiv_middle p {
+    margin:0px 50px;
+}*/
+.directionsDiv_middle p, .ingredientsDiv_middle p {
+    padding-bottom: 5px;
+    margin: 0px 80px 0px 50px;
+}
+
+.printer {
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+    display: block;
+    /*z-index:4;*/
+}
+
+    .printer img {
+        border: none;
+        width: 40px;
+    }
+
+.bgstretcher-area, .bgstretcher-page {
+    height: 100%;
+}
+
+.next, .back {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
