@@ -359,7 +359,9 @@ function setCurrRecipe(currRecipe) {
     $('.headerDiv img').attr({ 'src': currRecipe.header_bg, 'alt': currRecipe.name });
     $('.ingredientsDiv_middle p').html(currRecipe.description1);
     $('.directionsDiv_middle p').html(currRecipe.description2);
-    $('.printer').attr('href', '/pdf/' + currRecipe.pdf);
+    
+	// $('.printer').attr('href', '/pdf/' + currRecipe.pdf);
+	$('.printer').attr('href', currRecipe.pdf);
 
     if (currRecipe.image == null || currRecipe.image == "") {
         $('.imgDiv').hide(0);
