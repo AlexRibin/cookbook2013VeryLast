@@ -16,7 +16,7 @@ function onDocumentReady() {
     runPinchzoom();
     turnPages(currPageIndex);
     setPep();
-    changeSize();
+    //changeSize();
     setZIndex();
     setTimeout("setImgList();", 500);
 }
