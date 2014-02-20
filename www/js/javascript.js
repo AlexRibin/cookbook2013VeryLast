@@ -362,7 +362,7 @@ function setCurrRecipe(currRecipe) {
     
 	// $('.printer').attr('href', '/pdf/' + currRecipe.pdf);
 	$('.printer').attr('href', '#');
-	$('.printer').attr('onclick', "window.open('" + currRecipe.pdf+ "', '_blank', 'location=no');");
+	$('.printer').click("window.open('" + currRecipe.pdf+ "', '_blank', 'location=no');");
 
     if (currRecipe.image == null || currRecipe.image == "") {
         $('.imgDiv').hide(0);
