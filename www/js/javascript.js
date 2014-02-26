@@ -363,10 +363,11 @@ function setCurrRecipe(currRecipe) {
 	// $('.printer').attr('href', '/pdf/' + currRecipe.pdf);
 	//$('.printer').attr('href', '#');
 	$('.printer').click(function () {
-	    alert('aa');
+	    //alert('aa');
 	    //window.open(currRecipe.pdf, '_system', 'location=yes');
-	    window.open('http://docs.google.com/viewer?url=' + currRecipe.pdf, '_blank', 'location=no');
-        alert('bb');
+	    //window.open('http://docs.google.com/viewer?url=' + currRecipe.pdf, '_blank', 'location=no');
+        //alert('bb');
+	    window.plugins.childBrowser.showWebPage(currRecipe.pdf, { showLocationBar: false });
 	});
 
     if (currRecipe.image == null || currRecipe.image == "") {
