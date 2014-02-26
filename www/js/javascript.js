@@ -364,8 +364,9 @@ function setCurrRecipe(currRecipe) {
 	//$('.printer').attr('href', '#');
 	$('.printer').click(function () {
 	    alert('aa');
-	    window.open(currRecipe.pdf, '_system', 'location=yes');
-	    alert('bb');
+	    //window.open(currRecipe.pdf, '_system', 'location=yes');
+	    window.open('http://docs.google.com/viewer?url=' + currRecipe.pdf, '_blank', 'location=no');
+        alert('bb');
 	});
 
     if (currRecipe.image == null || currRecipe.image == "") {
@@ -558,10 +559,10 @@ function setMenu() {
 }
 
 function toggleMenu() {
-    //$('.btnMenu').click(function () {
-    //    $('.menu_cats').slideToggle();
-    //    $('.menu_recipe').slideUp();
-    //});
+    $('.btnMenu').click(function () {
+        $('.menu_cats').slideToggle();
+        $('.menu_recipe').slideUp();
+    });
 }
 function hideMenu() {
     $('.menu_cats, .menu_recipe').slideUp();
