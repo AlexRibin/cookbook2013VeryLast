@@ -368,6 +368,8 @@ function setCurrRecipe(currRecipe) {
 	    //window.open('http://docs.google.com/viewer?url=' + currRecipe.pdf, '_blank', 'location=no');
         //alert('bb');
 	    window.plugins.childBrowser.showWebPage(currRecipe.pdf, { showLocationBar: false });
+	    alert('bb');
+
 	});
 
     if (currRecipe.image == null || currRecipe.image == "") {
