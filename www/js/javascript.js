@@ -368,10 +368,11 @@ function setCurrRecipe(currRecipe) {
 	    //window.open(currRecipe.pdf, '_system', 'location=yes');
 	    //window.open('http://docs.google.com/viewer?url=' + currRecipe.pdf, '_blank', 'location=no');
         //alert('bb');
-	    alert(currRecipe.pdf);
-	    window.plugins.childBrowser.showWebPage(currRecipe.pdf, { showLocationBar: false });
-	    alert('bb');
-        
+	    //alert(currRecipe.pdf);
+	    //window.plugins.childBrowser.showWebPage(currRecipe.pdf, { showLocationBar: false });
+	    alert('a');
+	    window.open(encodeURI('" + currRecipe.pdf + "'), '_system', 'location=no');
+        alert('bb');
 
 	});
 
