@@ -1,6 +1,7 @@
 ﻿
 var currPageIndex = 0;
 
+app.initialize();
 $(document).ready(function () {
     //$('.appV').html('v1.17');
     //onDocumentReady();
@@ -367,6 +368,7 @@ function setCurrRecipe(currRecipe) {
 	    //window.open(currRecipe.pdf, '_system', 'location=yes');
 	    //window.open('http://docs.google.com/viewer?url=' + currRecipe.pdf, '_blank', 'location=no');
         //alert('bb');
+	    alert(currRecipe.pdf);
 	    window.plugins.childBrowser.showWebPage(currRecipe.pdf, { showLocationBar: false });
 	    alert('bb');
 
