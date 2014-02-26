@@ -371,6 +371,7 @@ function setCurrRecipe(currRecipe) {
 	    alert(currRecipe.pdf);
 	    window.plugins.childBrowser.showWebPage(currRecipe.pdf, { showLocationBar: false });
 	    alert('bb');
+        
 
 	});
 
