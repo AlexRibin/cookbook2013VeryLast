@@ -363,7 +363,9 @@ function setCurrRecipe(currRecipe) {
 	// $('.printer').attr('href', '/pdf/' + currRecipe.pdf);
 	$('.printer').attr('href', '#');
 	$('.printer').click(function () {
-		window.open(currRecipe.pdf , '_system', 'location=yes');
+	    alert('aa');
+	    window.open(currRecipe.pdf, '_system', 'location=yes');
+	    alert('bb');
 	});
 
     if (currRecipe.image == null || currRecipe.image == "") {
